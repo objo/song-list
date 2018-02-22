@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   post 'songs/create' => 'songs#create', as: :songs
   
   delete 'songs/destroy/:id' => 'songs#destroy', as: :delete_song
+  get 'songs/edit/:id' => 'songs#edit', as: :edit_song
+  
+  post 'songs/update/:id' => 'songs#update', as: :song 
 end
