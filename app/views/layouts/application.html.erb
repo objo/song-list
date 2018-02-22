@@ -11,6 +11,11 @@
 
   <body>
     <h1>Best Songlist Eva!</h1>
-    <%= yield %>
+    <ul>
+      <li><%= link_to "Create a Song", new_song_path %></li>
+    </ul>
+    <div>
+      <%= yield %>
+    </div>  
   </body>
 </html>
