@@ -9,8 +9,12 @@ class SongsController < ApplicationController
   end
   
   def create
-    song = Song.create(song_params)
-    redirect_to song_list_path
+    @song = Song.create(song_params)
+    if @song.persisted?
+      redirect_to song_list_path
+    else 
+      render 'new'
+    end
   end
   
   private 
