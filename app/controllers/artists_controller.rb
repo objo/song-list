@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
   def index
-    # retrieve all Artists
+    @artists = Artist.all
   end
 end

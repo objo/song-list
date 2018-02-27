@@ -4,7 +4,9 @@
   <tr>
     <th>Name</th>
   </tr>
-  <tr>
-    <td>My new awesome band</td>
-  </tr>
+  <% @artists.each do |artist| %>
+    <tr>
+      <td><%= artist.name %></td>
+    </tr>
+  <% end %>
 </table>
