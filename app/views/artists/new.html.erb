@@ -1,0 +1,9 @@
+<%= form_for @artist, method: 'post' do |f|  %>
+
+  <%= render "shared/form_errors", model: @artist %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  
+  <%= f.submit "Create it man" %>
+<% end %>
