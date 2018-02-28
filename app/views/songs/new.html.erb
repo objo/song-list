@@ -16,5 +16,7 @@
   <%= f.text_field :name %>
   <%= f.label :duration %>
   <%= f.number_field :duration %>
+  <%= f.label :artist_id %>
+  <%= f.select :artist_id, @artists %>
   <%= f.submit "Submit me bro" %>
 <% end %>
